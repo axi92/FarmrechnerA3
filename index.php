@@ -1,4 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php 
+    $filetime = filemtime("index.php");
+    if($filetime == false)
+    {
+        $sfiletime = "Nicht verfuegbar!";
+    }
+    else
+    {
+        $sfiletime = date("d.m.Y - H:i", $filetime);
+    }
+?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"><head>
     <title>Zero-One Farmrechner</title>
     <meta name="description" content="JS Calculator">
@@ -149,6 +160,7 @@
 		<span id="ausgabe" style="text-align: center;border-style:solid;border-width:0px;"></span><br>
 		<span id="sold" style="text-align: center;border-style:solid;border-width:0px;"></span><br>
 		<span style="text-align: center;border-style:solid;border-width:0px;">Copyright © by axi92</span><br>
+		<span style="text-align: center;border-style:solid;border-width:0px;"><?php echo 'Letztes Update: - ' . $sfiletime ?></span><br>
 	</form>
 	<div>
 		<table id="rounded-corner" summary="Vehicle List"  style="float:left;">
