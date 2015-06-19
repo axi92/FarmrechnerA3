@@ -102,7 +102,7 @@
 			{
 				console.log(produkte[i][0] + '-' + i);
 				dropdown = dropdown + '<option id="product' + i + '" value="' + i + '">' + produkte[i][0] + ' -> ' + produkte[i][1] + '</option>' + '\n'
-				table2 = table2 + '<tr><td>' + produkte[i][0] + ' (' + produkte[i][3] + ')</td><td>' + produkte[i][1] + ' (' + produkte[i][4] + ')</td><td>' +  '</td><td>' + splitter(produkte[i][2]) + '</td></tr>'
+				table2 = table2 + '<tr><td>' + produkte[i][0] + ' (' + produkte[i][3] + ')</td><td>' + produkte[i][1] + ' (' + produkte[i][4] + ')</td><td>' +  '</td><td>' + splitter(produkte[i][2]) +  '</td><td>' + splitter( Math.round(produkte[i][2]/produkte[i][3]) ) + '</td></tr>'
 			}
 			for (var i = 0; i < vehicle.length; i++)
 			{
@@ -196,17 +196,19 @@
 					<th scope="col" class="rounded-company">Rohstoff (Gewicht)</th>
 					<th scope="col" class="rounded-q1">Endprodukt (Gewicht)</th>
 					<th scope="col" colspan="2" class="rounded-q2">Verkaufspreis</th>
+					<th scope="col" colspan="2" class="rounded-q2">Preis/Gewicht</th>
 				</tr>
 			</thead>
 				<tfoot>
 				<tr>
-					<td colspan="3" class="rounded-foot-left"><em>Sollten die Daten Fehlerhaft sein bitte im Forum axi92 informieren!</em></td>
+					<td colspan="4" class="rounded-foot-left"><em>Sollten die Daten Fehlerhaft sein bitte im Forum axi92 informieren!</em></td>
 					<td class="rounded-foot-right">&nbsp;</td>
 				</tr>
 			</tfoot>
 			<tbody id='table2_content'>
 				<tr>
 					<td>Produkt1</td>
+					<td>0.0</td>
 					<td>0.0</td>
 					<td>0.0</td>
 				</tr>
@@ -233,7 +235,7 @@
 			font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 			font-size: 12px;
 			margin: 45px;
-			width: 480px;
+			width: 500px;
 			text-align: left;
 			border-collapse: collapse;
 		}
