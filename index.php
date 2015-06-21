@@ -25,7 +25,7 @@
 			['Trauben','Moonshine',2574,3,2],
 			['Sand','Glas',1372,3,1],
 			['Öl','Rafiniertes Öl',1792,7,5],
-			['Erdgas','Rafiniertes Erdgas',3900,6,4],
+			['Erdgas','Rafiniertes Erdgas',3220,6,4],
 			['Diamant','Geschliffener Diamant',3024,4,2],
 			['Baumwolle','Kleidung',1624,4,2],
 			['Helium','Helium',20000,100,100],
