@@ -135,4 +135,40 @@ switch (_item) do
 	default {1};
 
 */
+
+
+function ConvertName($input)
+{
+	switch($input)
+	{
+		case 'pizza': $output = 'Pizza';
+		case 'rabbit': $output = 'Hase';
+		case 'redgull': $output = 'Redgull';
+		case 'tbacon': $output = 'Taktischer Speck';
+		case 'donuts': $output = 'Donuts';
+		case 'water': $output = 'Wasser';
+		case 'coffee': $output = 'Kaffee';
+		case 'fuelF': $output = 'Benzinkanister';
+		case 'lockpick': $output = 'Ditrich';
+		case 'turtlesoup': $output = 'Schildkrötensuppe';
+		case 'pickaxe': $output = 'Spitzhacke';
+		case 'apple': $output = 'Apfel';
+		case 'peach': $output = 'Pfirsich';
+		case 'bananen': $output = 'Bananen';
+		case 'grapes': $output = 'Weintrauben';
+		case 'ornate': $output = 'Ornate';
+		case 'salema': $output = 'Salema';
+		case 'mackerel': $output = 'Makrele';
+		case 'mullet': $output = 'Mullet';
+		case 'catshark': $output = 'Katzenhai';
+		case 'wine': $output = 'Wein';
+		case 'salt_r': $output = 'Salz Rein';
+		case 'copper_r': $output = 'Kupferbarren';
+		case 'clothing': $output = 'Kleidung';
+		case 'oilp': $output = 'Öl raffiniert';
+		case 'pizza': $output = 'Pizza';
+		case 'OOOOOOO': $output = 'OOOOOOO';
+	}
+	return $output;
+}
 ?>
