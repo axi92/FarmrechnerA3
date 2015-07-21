@@ -148,7 +148,6 @@ function ConvertName($input)
 		case 'donuts': $output = 'Donuts';
 		case 'water': $output = 'Wasser';
 		case 'coffee': $output = 'Kaffee';
-		case 'fuelF': $output = 'Benzinkanister';
 		case 'lockpick': $output = 'Ditrich';
 		case 'turtlesoup': $output = 'Schildkrötensuppe';
 		case 'pickaxe': $output = 'Spitzhacke';
@@ -166,8 +165,32 @@ function ConvertName($input)
 		case 'copper_r': $output = 'Kupferbarren';
 		case 'clothing': $output = 'Kleidung';
 		case 'oilp': $output = 'Öl raffiniert';
-		case 'pizza': $output = 'Pizza';
-		case 'OOOOOOO': $output = 'OOOOOOO';
+		case 'iron_r': $output = 'Eisen raffiniert';
+		case 'glass': $output = 'Glas';
+		case 'cement': $output = 'Zement';
+		case 'brief': $output = 'Brief';
+		case 'diamond': $output = 'Diamant';
+		case 'diamondc': $output = 'Diamant geschliffen';
+		case 'petroleum': $output = 'Petrolium';
+		case 'med_marijuana': $output = 'Marihuana med.';
+		case 'marijuana': $output = 'Marihuana';
+		case 'oilu': $output = 'Öl roh';
+		case 'heroinu': $output = 'Heruin unverarbeitet';
+		case 'dunklematerie': $output = 'Dunklematerie';
+		case 'helium-3': $output = 'Helium-3';
+		case 'paket': $output = 'Paket';
+		case 'heroinp': $output = 'Heruin verarbeitet';
+		case 'cannabis': $output = 'Cannabis';
+		case 'tuna': $output = 'Tunfisch';
+		case 'turtle': $output = 'Schildkröte';
+		case 'fishing': $output = 'Fisch';
+		case 'fuelE': $output = 'Bezin-Kanister leer';
+		case 'fuelF': $output = 'Bezin-Kanister voll';
+		case 'money': $output = 'Geld';
+		case 'copperore': $output = 'Kupfererz';
+		case 'ironore': $output = 'Eisenererz';
+		case 'sand': $output = 'Sand';
+		default: $output = 'Unknown input: (' . $input . ')';
 	}
 	return $output;
 }
